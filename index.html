@@ -1,422 +1,535 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Gamma Tech Syria</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-    />
-    <!-- <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" /> -->
-    <link rel="stylesheet" href="assets/bootstrap/css/all.min.css" />
-    <link rel="stylesheet" href="assets/bootstrap/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css" />
-    <link rel="stylesheet" href="assets/bootstrap/css/lightbox.min.css" />
-    <style>
-      .lb-loader,.lightbox{text-align:center;line-height:0;position:absolute;left:0}body.lb-disable-scrolling{overflow:hidden}.lightboxOverlay{position:absolute;top:0;left:0;z-index:9999;background-color:#000;filter:alpha(Opacity=80);opacity:.8;display:none}.lightbox{width:100%;z-index:10000;font-weight:400;outline:0}.lightbox .lb-image{display:block;height:auto;max-width:inherit;max-height:none;border-radius:3px;border:4px solid #fff}.lightbox a img{border:none}.lb-outerContainer{position:relative;width:250px;height:250px;margin:0 auto;border-radius:4px;background-color:#fff}.lb-outerContainer:after{content:"";display:table;clear:both}.lb-loader{top:43%;height:25%;width:100%}.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(../images/loading.gif) no-repeat}.lb-nav{position:absolute;top:0;left:0;height:100%;width:100%;z-index:10}.lb-container>.nav{left:0}.lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}.lb-next,.lb-prev{height:100%;cursor:pointer;display:block}.lb-nav a.lb-prev{width:34%;left:0;float:left;background:url(assets/img/images/prev.png) left 48% no-repeat; filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-prev{filter:alpha(Opacity=100);opacity:1}.lb-nav a.lb-next{width:64%;right:0;float:right;background:url(assets/img/images/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-next{filter:alpha(Opacity=100);opacity:1}.lb-dataContainer{margin:0 auto;padding-top:5px;width:100%;border-bottom-left-radius:4px;border-bottom-right-radius:4px}.lb-dataContainer:after{content:"";display:table;clear:both}.lb-data{padding:0 4px;color:#ccc}.lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}.lb-data .lb-caption{font-size:13px;font-weight:700;line-height:1em}.lb-data .lb-caption a{color:#4ae}.lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;color:#999}.lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(assets/img/images/close.png) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}.lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}
-      .hide {
-        display: none;
-      }
-      .find {
-        margin-top: 393px;
-        margin-right: 8px;
-      }
-      .projects-text {
-        color: black;
-        opacity: 25%;
-      }
-      .header {
-        background: linear-gradient(to top, #7ebead, #4574b1);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      .active {
-        transition: all 0.3s ease, color 0.3s ease;
-        color: #00a7e1;
-        opacity: 100%;
-        text-decoration: underline;
-      }
-      .projects-text:hover {
-        transition: all 0.3s ease, color 0.3s ease;
-        color: black;
-        opacity: 100%;
-      }
-      .project:hover {
-        transform: scale(1.05);
-        transition: all 0.5s ease-in-out;
-        opacity: 0.8;
-      }
-    </style>
-  </head>
 
-  <body onload="showDiv(1)" id="page-top">
-    <a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Gamma Tech Syria</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/styles/shimmerButton.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" />
+  <!-- <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" /> -->
+  <link rel="stylesheet" href="assets/bootstrap/css/all.min.css" />
+  <link rel="stylesheet" href="assets/bootstrap/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css" />
+  <link rel="stylesheet" href="assets/bootstrap/css/lightbox.min.css" />
+  <link rel="stylesheet" href="./assets/styles/responsiveImageCarousel.css">
+  <link rel="stylesheet" href="./assets/styles/typingAnimation.css">
+  <style>
+    .lb-loader,
+    .lightbox {
+      text-align: center;
+      line-height: 0;
+      position: absolute;
+      left: 0
+    }
 
-    <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
-      <div class="container">
-        <button
-          data-bs-toggle="collapse"
-          class="navbar-toggler d-none"
-          data-bs-target="#"
-        ></button>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav sidebar-nav" id="sidebar-nav">
-            <li class="nav-item sidebar-brand">
-              <a class="nav-link active js-scroll-trigger" href="#page-top"
-                >Gamma Tech</a
-              >
-            </li>
-            <li class="nav-item sidebar-nav-item">
-              <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
-            </li>
-            <li class="nav-item sidebar-nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
-            </li>
-            <li class="nav-item sidebar-nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services"
-                >Services</a
-              >
-            </li>
-            <li class="nav-item sidebar-nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio"
-                >Recent Projects</a
-              >
-            </li>
-            <li class="nav-item sidebar-nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <header
-      class="d-md-flex d-none masthead "
-      style="background-image: url('assets/img/Teal\ Futuristic\ Technology\ Facebook\ Cover.png'); background-position: center;"
-    >
-      <div class="container-fluid d-flex position-absolute bottom-0 mb-3 justify-content-center">
-        <a
-          class="btn btn-outline-light find js-scroll-trigger"
-          role="button"
-          href="#about"
-          >Find Out More</a
-        >
-    </div>
-    </header>
-    <header
-      class="d-md-none d-flex masthead h-100"
-      style="background-image: url('assets/img/Dark\ Blue\ Neon\ Artificial\ Intelligence\ Instagram\ Story.png')"
-    >
-    <div class="container-fluid d-flex position-absolute bottom-0 mb-3 justify-content-center">
-        <a
-          class="btn btn-outline-light find js-scroll-trigger"
-          role="button"
-          href="#about"
-          >Find Out More</a
-        >
-    </div>
-    </header>
-    <section id="about" class="content-section bg-light">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>About Us&nbsp;</h2>
-            <p class="lead mb-2">
-              <span
-                ><br /><strong>Gamma Tech</strong>&nbsp;is a software
-                development company that provides innovative and customized
-                solutions for businesses and individuals. We specialize in web
-                applications, mobile apps, and other software services that meet
-                the needs and expectations of our clients. Whether you need a
-                website, an app, a software product, or a software integration,
-                we have the expertise and experience to deliver it.We offer a
-                full range of software development services, from consulting and
-                design to development and testing. We use the latest
-                technologies and methodologies to ensure quality and efficiency.
-                We also provide ongoing support and maintenance to ensure your
-                software runs smoothly and securely.<br /><br
-              /></span>
-            </p>
-            <a
-              class="btn btn-primary js-scroll-trigger"
-              role="button"
-              href="#services"
-              >What We Offer</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      id="services"
-      class="content-section bg-primary text-white text-center"
-    >
-      <div class="container">
-        <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Services</h3>
-          <h2 class="mb-5">What We Offer</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-            <span class="mx-auto service-icon rounded-circle mb-3"
-              ><i class="fa fa-mobile-screen"></i
-            ></span>
-            <h4><strong>Mobile App</strong></h4>
-            <p class="mb-0 text-faded">Looks great on any screen size!</p>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-            <span class="mx-auto service-icon rounded-circle mb-3"
-              ><i class="fa fa-desktop"></i
-            ></span>
-            <h4><strong>Web App</strong></h4>
-            <p class="mb-0 text-faded">Freshly redesigned for Bootstrap 4.</p>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-            <span class="mx-auto service-icon rounded-circle mb-3"
-              ><i class="fa fa-users-gear"></i
-            ></span>
-            <h4><strong>Software Consultancy</strong></h4>
-            <p class="mb-0 text-faded">
-              <span>Milions of users&nbsp;</span><i class="fa fa-heart"></i
-              ><span>&nbsp;us!</span>
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-            <span class="mx-auto service-icon rounded-circle mb-3"
-              ><i class="fa fa-user-gear"></i
-            ></span>
-            <h4><strong>Software Maintenance</strong></h4>
-            <p class="mb-0 text-faded">I mustache you a question...</p>
-          </div>
-        </div>
-        <a
-              class="btn btn-light mt-5 js-scroll-trigger"
-              role="button"
-              href="#portfolio"
-              >Recent Project</a
-            >
-      </div>
-    </section>
+    body.lb-disable-scrolling {
+      overflow: hidden
+    }
 
-    <section id="portfolio" class="mt-5">
-        <div class="content-section-heading text-center">
-          <h2 class="header">Recent Projects</h2>
-        </div>
-      <div id="Recent" class="container-fluid p-5 bg-dark bg-opacity-10">
-        <div class="row g-0">
-            <div class="row ">
-              <div class="col-md-3">
-                <div class="btn-group-vertical">
-                    <div
-                    class="projects-text active mb-4"
-                    role="button"
-                    onclick="showDiv(1)"
-                    >
-                    <h4>Tanmiah System</h4>
-                    </div>
-                    <div
-                    class="projects-text mb-4"
-                    role="button"
-                    onclick="showDiv(2)"
-                    >
-                    <h4>Real Estate</h4>
-                    </div>
-                    <div
-                    class="projects-text mb-4"
-                    role="button"
-                    onclick="showDiv(3)"
-                    >
-                    <h4>Time Attendance</h4>
-                    </div>
-                    <div
-                    class="projects-text mb-4"
-                    role="button"
-                    onclick="showDiv(4)"
-                    >
-                    <h4>Newpark Merchandiser</h4>
-                    </div>
-                    <div
-                    class="projects-text mb-4"
-                    role="button"
-                    onclick="showDiv(5)"
-                    >
-                    <h3>Newpark Agent</h3>
-                    </div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div id="div1" class="hide">
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="project shadow-lg rounded-5">
-                          <a href="assets/img/tanmiah/smartmockups_lostv83t.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
-                            <img src="assets/img/tanmiah/logo.jpg" alt="" class="img-fluid rounded-3">
-                          </a>
-                        </div>
-                        <div class="project shadow-lg rounded-5">
-                          <a href="assets/img/tanmiah/smartmockups_losu27qz.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
-                          </a>
-                           <a href="assets/img/tanmiah/smartmockups_losu4e95.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
-                          </a>
-                           <a href="assets/img/tanmiah/smartmockups_lou20fue.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
-                          </a>
-                           <a href="assets/img/tanmiah/smartmockups_lou225m7.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
-                          </a>
-                           <a href="assets/img/tanmiah/smartmockups_lou2lzjk.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="p-5 text-center text-muted">
-                            <h3>Job Motivation System For All Ministries And Departments In Syria Goverment</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="div2" class="hide">
-                  <div>
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="project shadow-lg rounded-5">
-                          <a href="assets/img/akarat/1- OnBoarding & Login Page.png" data-lightbox="assets/img/akarat" data-title="OnBoarding & Login Page">
-                            <img src="assets/img/canva-home,-real-estate,-home-design-logo-eaGl0uXNSMo.jpg" alt="" class="img-fluid rounded-3">
-                          </a>
-                          <a href="assets/img/akarat/2- Home Page.png" data-lightbox="assets/img/akarat" data-title="Home Page">
-                          </a>
-                           <a href="assets/img/akarat/3- Details Home Page.png" data-lightbox="assets/img/akarat" data-title="Details Home Page">
-                          </a>
-                           <a href="assets/img/akarat/4- Home Page & Drawer.png" data-lightbox="assets/img/akarat" data-title="Home Page & Drawer">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 text-center text-muted">
-                        <div>
-                          <h4>Real Estate Is An Application That Gives The User The Ability To Browse Homes, Shops, And Other Types Of Real Estate And Enables Him To Rent Or Buy Those Properties, In Addition To That He Can Place A Property He Owns In The Application And Offer It For Rent Or Sale.</h4>    
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="div3" class="hide">
-                  <div>
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="project shadow-lg rounded-5">
-                          <a href="assets/img/Dawam/1- Splash Screen.png" data-lightbox="assets/img/Dawam" data-title="Splash Screen">
-                            <img src="assets/img/splash.jpg" alt="" class="img-fluid rounded-3">
-                          </a>
-                          <a href="assets/img/Dawam/2- Notification Screen.png" data-lightbox="assets/img/Dawam" data-title="Notification Screen">
-                          </a>
-                          <a href="assets/img/Dawam/3- Login & Clock In & Theme.png" data-lightbox="assets/img/Dawam" data-title="Login & Clock In & Theme">
-                          </a>
-                          <a href="assets/img/Dawam/4- Authentication Screen.png" data-lightbox="assets/img/Dawam" data-title="Authentication Screen">
-                          </a>
-                          <a href="assets/img/Dawam/5- Clocked In Screen.png" data-lightbox="assets/img/Dawam" data-title="Clocked In Screen">
-                          </a>
-                          <a href="assets/img/Dawam/6- Finishing Work Screen.png" data-lightbox="assets/img/Dawam" data-title="Finishing Work Screen">
-                          </a>
-                          <a href="assets/img/Dawam/7- Vacation Screen.png" data-lightbox="assets/img/Dawam" data-title="Vacation Screen">
-                          </a>
-                          <a href="assets/img/Dawam/8- Vacation Details Screen.png" data-lightbox="assets/img/Dawam" data-title="Vacation Details Screen">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 text-center text-muted">
-                        <div>
-                            <h4>Time Attendance Is A Program That Enables Companies To Control Their Employees' Working Hours And Log In And Out Through It.</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="div4" class="hide">
-                  <div>
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="project shadow-lg rounded-5">
-                          <a href="assets/img/newparkGold/1- Login & Home Page.png" data-lightbox="assets/img/newparkGold" data-title="Login & Home Page">
-                            <img class="bg-secondary w-100" src="assets/img/logoNewpark.png" alt="" class="img-fluid rounded-3">
-                          </a>
-                           <a href="assets/img/newparkGold/2- Create Visit & Visits Page.png" data-lightbox="assets/img/newparkGold" data-title="Create Visit & Visits">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 text-center text-muted">
-                        <div>
-                           <h4>Newpark Merchandiser Is An Application responsible For Providing The Company With The Necessary Information About Sales Cases And Problems Encountered By Customers. (Specific To The Class VIP)</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="div5" class="hide">
-                  <div>
-                    <div class="row align-items-center">
-                      <div class="col-md-6">
-                        <div class="project shadow-lg rounded-5">
-                          <a href="assets/img/newpark/1- Deteminre & Home Page.png" data-lightbox="assets/img/newpark" data-title="Login & Home Page">
-                            <img class="bg-primary w-100" src="assets/img/logoNewpark.png" alt="" class="img-fluid rounded-3">
-                          </a>
-                           <a href="assets/img/newpark/2- Product & Cart Page.png" data-lightbox="assets/img/newpark" data-title="Product & Cart Page">
-                          </a>
-                           <a href="assets/img/newpark/3- Reports & Orders Page.png" data-lightbox="assets/img/newpark" data-title="Reports & Orders Page">
-                          </a>
-                           <a href="assets/img/newpark/1- Home & Orders & Reports Page.png" data-lightbox="assets/img/newpark" data-title="Home & Orders & Reports Page">
-                          </a>
-                           <a href="assets/img/newpark/2- Details Order & Add Meals & Add Category Page.png" data-lightbox="assets/img/newpark" data-title="Details Order & Add Meals & Add Category Page">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 text-center text-muted">
-                        <div>
-                          <h4>Newpark Agent Is An Application Responsible For Registering Orders By Agents, Sending Them To The Supervisor, Negotiating, And Recording Returns, Payments And Accounts, In Addition To The Ability To Review Order Statuses.</h4>   
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    .lightboxOverlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      background-color: #000;
+      filter: alpha(Opacity=80);
+      opacity: .8;
+      display: none
+    }
 
-    <footer id="contact" class="footer text-center">
-      <div class="container">
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            &nbsp;<a class="link-light social-link rounded-circle" href="https://www.facebook.com/GammaTechSy?mibextid=JRoKGi"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
+    .lightbox {
+      width: 100%;
+      z-index: 10000;
+      font-weight: 400;
+      outline: 0
+    }
+
+    .lightbox .lb-image {
+      display: block;
+      height: auto;
+      max-width: inherit;
+      max-height: none;
+      border-radius: 3px;
+      border: 4px solid #fff
+    }
+
+    .lightbox a img {
+      border: none;
+    }
+
+    .lb-outerContainer {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      margin: 0 auto;
+      border-radius: 4px;
+      background-color: #fff
+    }
+
+    .lb-outerContainer:after {
+      content: "";
+      display: table;
+      clear: both
+    }
+
+    .lb-loader {
+      top: 43%;
+      height: 25%;
+      width: 100%
+    }
+
+    .lb-cancel {
+      display: block;
+      width: 32px;
+      height: 32px;
+      margin: 0 auto;
+      background: url(../images/loading.gif) no-repeat
+    }
+
+    .lb-nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 10
+    }
+
+    .lb-container>.nav {
+      left: 0
+    }
+
+    .lb-nav a {
+      outline: 0;
+      background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
+    }
+
+    .lb-next,
+    .lb-prev {
+      height: 100%;
+      cursor: pointer;
+      display: block
+    }
+
+    .lb-nav a.lb-prev {
+      width: 34%;
+      left: 0;
+      float: left;
+      background: url(assets/img/navigation/prev.png) left 48% no-repeat;
+      filter: alpha(Opacity=0);
+      opacity: 0;
+      -webkit-transition: opacity .6s;
+      -moz-transition: opacity .6s;
+      -o-transition: opacity .6s;
+      transition: opacity .6s
+    }
+
+    .lb-nav a.lb-prev {
+      filter: alpha(Opacity=100);
+      opacity: 1
+    }
+
+    .lb-nav a.lb-next {
+      width: 64%;
+      right: 0;
+      float: right;
+      background: url(assets/img/navigation/next.png) right 48% no-repeat;
+      filter: alpha(Opacity=0);
+      opacity: 0;
+      -webkit-transition: opacity .6s;
+      -moz-transition: opacity .6s;
+      -o-transition: opacity .6s;
+      transition: opacity .6s
+    }
+
+    .lb-nav a.lb-next {
+      filter: alpha(Opacity=100);
+      opacity: 1
+    }
+
+    .lb-dataContainer {
+      margin: 0 auto;
+      padding-top: 5px;
+      width: 100%;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px
+    }
+
+    .lb-dataContainer:after {
+      content: "";
+      display: table;
+      clear: both
+    }
+
+    .lb-data {
+      padding: 0 4px;
+      color: #ccc
+    }
+
+    .lb-data .lb-details {
+      width: 85%;
+      float: left;
+      text-align: left;
+      line-height: 1.1em
+    }
+
+    .lb-data .lb-caption {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1em
+    }
+
+    .lb-data .lb-caption a {
+      color: #4ae
+    }
+
+    .lb-data .lb-number {
+      display: block;
+      clear: left;
+      padding-bottom: 1em;
+      font-size: 12px;
+      color: #999
+    }
+
+    .lb-data .lb-close {
+      display: block;
+      float: right;
+      width: 30px;
+      height: 30px;
+      background: url(assets/img/navigation/close.png) top right no-repeat;
+      text-align: right;
+      outline: 0;
+      filter: alpha(Opacity=70);
+      opacity: .7;
+      -webkit-transition: opacity .2s;
+      -moz-transition: opacity .2s;
+      -o-transition: opacity .2s;
+      transition: opacity .2s
+    }
+
+    .lb-data .lb-close:hover {
+      cursor: pointer;
+      filter: alpha(Opacity=100);
+      opacity: 1
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .find {
+      margin-top: 393px;
+      margin-right: 8px;
+    }
+
+    .projects-text {
+      color: black;
+      opacity: 25%;
+    }
+
+    .header {
+      background: linear-gradient(to top, #7ebead, #4574b1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .active {
+      transition: all 0.3s ease, color 0.3s ease;
+      color: #00a7e1;
+      opacity: 100%;
+      text-decoration: underline;
+    }
+
+    .projects-text:hover {
+      transition: all 0.3s ease, color 0.3s ease;
+      color: black;
+      opacity: 100%;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-in-out;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body onload="showDiv(1)" id="page-top">
+  <a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
+
+  <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
+    <div class="container">
+      <button data-bs-toggle="collapse" class="navbar-toggler d-none" data-bs-target="#"></button>
+      <div class="collapse navbar-collapse font-monospace fs-5 text-start">
+        <ul class="navbar-nav sidebar-nav" id="sidebar-nav">
+          <li class="nav-item sidebar-brand fs-4">
+            <a class="nav-link active js-scroll-trigger" href="#page-top">Gamma Tech</a>
           </li>
-          <li class="list-inline-item">
-            &nbsp;<a class="link-light social-link rounded-circle" href="https://wa.me/+963930371225";
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
+          <li class="nav-item sidebar-nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
           </li>
-          <li class="list-inline-item">
-            &nbsp;<a class="link-light social-link rounded-circle" href="https://www.linkedin.com/company/gamma-tech-sy/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+          <li class="nav-item sidebar-nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
+          </li>
+          <li class="nav-item sidebar-nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item sidebar-nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Recent">Recent Projects</a>
+          </li>
+          <li class="nav-item sidebar-nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
         </ul>
-        <p class="text-muted mb-0 small">Copyright &nbsp;© Gamma Tech 2023</p>
       </div>
-      <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"
-        ><i class="fa fa-angle-up"></i
-      ></a>
-    </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
-  </body>
+    </div>
+  </nav>
+  <header class="d-md-flex d-none masthead "
+    style="background-image: url('assets/img/Teal_Futuristic_Technology_Facebook_Cover.png'); background-position: center;">
+    <div class="container-fluid d-flex flex-column text-white position-absolute bottom-0 mb-5 justify-content-center">
+      <h2 class="mx-auto fs-1 font-monospace">Create the moment ;</h2>
+      <h2 class="mx-auto fs-1 font-monospace typing mb-3">Develop the future .</h2>
+      <a href="#about" class="mx-auto mt-2" ><button type="button" class="btn-shine" style="background-color: #4676B8 !important;" >Find Out More</button></a>
+    </div>
+  </header>
+  <header class="d-md-none d-flex masthead h-100"
+    style="background-image: url('assets/img/Dark_Blue_Neon_Artificial_Intelligence_Instagram_Story.png')">
+    <div class="container-fluid d-flex flex-column text-white position-absolute bottom-0 mb-5 justify-content-center">
+      <h2 class="mx-auto fs-1 font-monospace">Create the moment ;</h2>
+      <h2 class="mx-auto fs-1 font-monospace typing mb-3">Develop the future .</h2>
+      <a href="#about" class="mx-auto mt-2" ><button type="button" class="btn-shine" style="background-color: #4676B8 !important;" >Find Out More</button></a>
+    </div>
+  </header>
+  <section id="about" class="content-section bg-light masthead h-100">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="font-monospace">About Us&nbsp;</h2>
+          <p class="lh-lg fs-5" style="font-family: Noto Sans, sans-serif;font-weight: 300;">
+            <span><br /><strong>Gamma Tech</strong>&nbsp;is a software
+              development company that provides innovative and customized
+              solutions for businesses and individuals. We specialize in web
+              applications, mobile apps, and other software services that meet
+              the needs and expectations of our clients. Whether you need a
+              website, an app, a software product, or a software integration,
+              we have the expertise and experience to deliver it.We offer a
+              full range of software development services, from consulting and
+              design to development and testing. We use the latest
+              technologies and methodologies to ensure quality and efficiency.
+              We also provide ongoing support and maintenance to ensure your
+              software runs smoothly and securely.<br /><br /></span>
+          </p>
+          <a href="#services"><button type="button" class="btn-shine" >What We Offer</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="masthead bg-primary text-white text-center h-100">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-2 font-monospace">Services</h3>
+        <h2 class="mb-5 font-monospace">What We Offer</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <span class="mx-auto service-icon rounded-circle mb-3"><i class="fa fa-mobile-screen"></i></span>
+          <h4><strong class="font-monospace">Mobile App</strong></h4>
+          <p class="mb-0 text-faded">Looks great on any screen size!</p>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <span class="mx-auto service-icon rounded-circle mb-3"><i class="fa fa-desktop"></i></span>
+          <h4><strong class="font-monospace">Web App</strong></h4>
+          <p class="mb-0 text-faded">Freshly redesigned for Bootstrap 5</p>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <span class="mx-auto service-icon rounded-circle mb-3"><i class="fa fa-users-gear"></i></span>
+          <h4><strong class="font-monospace">Software Consultancy</strong></h4>
+          <p class="mb-0 text-faded">
+            <span>Thousands of users&nbsp;</span><i class="fa fa-heart"></i><span>&nbsp;us!</span>
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <span class="mx-auto service-icon rounded-circle mb-3"><i class="fa fa-user-gear"></i></span>
+          <h4><strong class="font-monospace">Software Maintenance</strong></h4>
+          <p class="mb-0 text-faded">I mustache you a question...</p>
+        </div>
+      </div>
+      <a href="#Recent"><button type="button" class="btn-shine mt-5" >Recent Projects</button></a>
+    </div>
+  </section>
+
+  <section id="portfolio" class="masthead h-100 content-section bg-primary">
+    <div id="Recent" class="container-fluid py-3 ">
+      <div class="mainForCarousel">
+        <ul class='slider'>
+          <li class='item' data-target="div5"
+            style="background-image: url('assets/img/logoNewpark.png');background-color: whitesmoke;">
+          </li>
+          <li class='item' data-target="div1" style="background-image: url('assets/img/tanmiah/logo.jpg');">
+          </li>
+          <li class='item' data-target="div2" style="background-image: url('assets/img/RealEstate.jpg')">
+          </li>
+          <li class='item' data-target="div3" style="background-image: url('assets/img/splash.jpg')">
+          </li>
+          <li class='item' data-target="div4"
+          style="background-image: url('assets/img/logoNewpark.png');background-color: gold;">
+        </li>
+        </ul>
+        <div class='nav'>
+          <div id="btnPrevInCarousel" class="rounded-circle">
+            <i class="fa-solid fa-reply fa-2xl" style="color:white;text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);cursor: pointer;"></i>
+          </div>
+          <div class="px-5"></div>
+          <div class="px-5"></div>
+          <div id="btnNextInCarousel" class="rounded-circle">
+            <i class="fa-solid fa-share fa-2xl" style="color:white;text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);cursor: pointer;"></i>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio2">
+        <div id="Recent2" class="container-fluid py-3">
+          <div class="div01 p-3 text-center">
+            <h4 class="text-white" style="font-family: Noto Sans, sans-serif;font-weight: 300;">Real Estate Is An Application That Gives The User
+              The Ability To hrowse Homes, Shops, And
+              Other Types Of Real Estate And Enables Him To Rent Or Buy Those Properties, In Addition To That
+              He Can Place A Property He Owns In The Application And Offer It For Rent Or Sale.</h4>
+    
+            <h4 class="text-white hide" style="font-family: Noto Sans, sans-serif;font-weight: 300;">Time Attendance Is A Program That Enables
+              Companies To Control Their Employees' Working Hours
+              And Log In And Out Through It.</h4>
+    
+            <h4 class="text-white hide" style="font-family: Noto Sans, sans-serif;font-weight: 300;">Newpark Merchandiser Is An Application
+              responsible For Providing The Company With The
+              Necessary Information About Sales Cases And Problems Encountered By Customers. (Specific To The
+              Class VIP)</h4>
+    
+            <h4 class="text-white hide" style="font-family: Noto Sans, sans-serif;font-weight: 300;">Newpark Agent Is An Application Responsible
+              For Registering Orders By Agents, Sending Them To
+              The Supervisor, Negotiating, And Recording Returns, Payments And Accounts, In Addition To The
+              Ability To Review Order Statuses.</h4>
+    
+            <h4 class="text-white hide" style="font-family: Noto Sans, sans-serif;font-weight: 300;">Tanmiah System Is a Job Motivation System For
+              All Ministries And Departments In Syria Goverment</h4>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="slideShowDivs" class="">
+    <div class="div1">
+      <a id="div1" href="assets/img/tanmiah/smartmockups_lostv83t.jpg" data-lightbox="tanmiah"
+        data-title="Tanmiah Dashboard">
+      </a>
+      <a href="assets/img/tanmiah/smartmockups_losu27qz.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
+      </a>
+      <a href="assets/img/tanmiah/smartmockups_losu4e95.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
+      </a>
+      <a href="assets/img/tanmiah/smartmockups_lou20fue.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
+      </a>
+      <a href="assets/img/tanmiah/smartmockups_lou225m7.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
+      </a>
+      <a href="assets/img/tanmiah/smartmockups_lou2lzjk.jpg" data-lightbox="tanmiah" data-title="Tanmiah Dashboard">
+      </a>
+    </div>
+    <div class="div2">
+      <a id="div2" href="assets/img/akarat/1-OnBoarding-and-Login-Page.png" data-lightbox="akarat"
+        data-title="OnBoarding & Login Page">
+      </a>
+      <a href="assets/img/akarat/2-Home-Page.png" data-lightbox="akarat" data-title="Home Page">
+      </a>
+      <a href="assets/img/akarat/3-Details-Home-Page.png" data-lightbox="akarat" data-title="Details Home Page">
+      </a>
+      <a href="assets/img/akarat/4-Home-Page-and-Drawer.png" data-lightbox="akarat" data-title="Home Page & Drawer">
+      </a>
+    </div>
+    <div class="div3">
+      <a id="div3" href="assets/img/Dawam/1-Splash_Screen.png" data-lightbox="Dawam" data-title="Splash Screen">
+      </a>
+      <a href="assets/img/Dawam/2-Notification_Screen.png" data-lightbox="Dawam" data-title="Notification Screen">
+      </a>
+      <a href="assets/img/Dawam/3-Login_and_Clock_In_and_Theme.png" data-lightbox="Dawam"
+        data-title="Login & Clock In & Theme">
+      </a>
+      <a href="assets/img/Dawam/4-Authentication_Screen.png" data-lightbox="Dawam" data-title="Authentication Screen">
+      </a>
+      <a href="assets/img/Dawam/5-Clocked_In_Screen.png" data-lightbox="Dawam" data-title="Clocked In Screen">
+      </a>
+      <a href="assets/img/Dawam/6-Finishing_Work_Screen.png" data-lightbox="Dawam" data-title="Finishing Work Screen">
+      </a>
+      <a href="assets/img/Dawam/7-Vacation_Screen.png" data-lightbox="Dawam" data-title="Vacation Screen">
+      </a>
+      <a href="assets/img/Dawam/8-Vacation_Details_Screen.png" data-lightbox="Dawam"
+        data-title="Vacation Details Screen">
+      </a>
+    </div>
+    <div class="div4">
+      <a id="div4" href="assets/img/newparkGold/1-Login_and_Home_Page.png" data-lightbox="newparkGold"
+        data-title="Login & Home Page">
+      </a>
+      <a href="assets/img/newparkGold/2-Create_Visit_and_Visits_Page.png" data-lightbox="newparkGold"
+        data-title="Create Visit & Visits Page">
+      </a>
+    </div>
+    <div class="div5">
+      <a id="div5" href="assets/img/newpark/1-Home_and_Orders_and_Reports_Page.png" data-lightbox="newpark"
+        data-title="Home & Orders & Reports Page">
+      </a>
+      <a href="assets/img/newpark/2-Product_and_Cart_Page.png" data-lightbox="newpark" data-title="Product & Cart Page">
+      </a>
+      <a href="assets/img/newpark/3-Reports_and_Orders_Page.png" data-lightbox="newpark"
+        data-title="Reports & Orders Page">
+      </a>
+      <a href="assets/img/newpark/4-Deteminre_and_Home_Page.png" data-lightbox="newpark"
+        data-title="Home & Orders & Reports Page">
+      </a>
+      <a href="assets/img/newpark/5-Details_Order_and_Add_Meals_and_Add_Category_Page.png" data-lightbox="newpark"
+        data-title="Details Order & Add Meals & Add Category Page">
+      </a>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          &nbsp;<a class="link-light social-link rounded-circle"
+            href="https://www.facebook.com/GammaTechSy?mibextid=JRoKGi"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li class="list-inline-item">
+          &nbsp;<a class="link-light social-link rounded-circle" href="https://wa.me/+963930371225" ;><i
+              class="fa-brands fa-whatsapp"></i></a>
+        </li>
+        <li class="list-inline-item">
+          &nbsp;<a class="link-light social-link rounded-circle"
+            href="https://www.linkedin.com/company/gamma-tech-sy/"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+      </ul>
+      <p id="Copyright" class="text-muted mb-0 small">Copyright &nbsp;© Gamma Tech 2023</p>
+    </div>
+    <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+  </footer>
+  <script src="./assets/js/responsiveImageCarousel.js"></script>
+  <script>
+    document.getElementById("Copyright").innerText=`Copyright © Gamma Tech ${new Date().getFullYear()}`
+  </script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.min.js"></script>
+  <script src="assets/js/recentProjectsData.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+</body>
+
 </html>
