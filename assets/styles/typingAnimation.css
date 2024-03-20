@@ -1,0 +1,56 @@
+:root {
+    --steps: 16;
+    --background: #0F0D23;
+  }
+  
+  body {
+    background: var(--background);
+  }
+  
+  .typing {
+    position: relative;
+  }
+  .typing::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: white;
+    background: var(--background);
+    -webkit-animation: typing 4s steps(var(--steps)) forwards, caret 1s 10 forwards;
+            animation: typing 4s steps(var(--steps)) forwards, caret 1s 10 forwards;
+  }
+  
+  @-webkit-keyframes typing {
+    100%{
+        width: 0;
+    }
+  }
+  
+  @keyframes typing {
+    100%{
+        width: 0;
+    }
+  }
+  @-webkit-keyframes caret {
+    0% {
+      color: transparent;
+    }
+    50%{
+        color: white;
+    }
+        100% {
+      color: transparent;
+    }
+  }
+  @keyframes caret {
+    0% {
+      color: transparent;
+    }
+    50%{
+        color: white;
+    }
+        100% {
+      color: transparent;
+    }
+  }
